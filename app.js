@@ -1,3 +1,4 @@
+// Ana Nelson
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -24,7 +25,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Lab 2 Routes
-app.use('/create', createUserRouter); 
+app.use('/createuser', createUserRouter); 
 app.use('/adduser', addUserRouter);
 
 app.use('/', indexRouter);
